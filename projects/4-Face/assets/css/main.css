@@ -1,0 +1,29 @@
+@charset 'utf-8';
+body {
+	background-color: #1e272e;
+}
+
+.eyes,
+.nose,
+.mouth {
+	display: flex;
+	justify-content: space-evenly;
+}
+
+.box {
+	width: 200px;
+	height: 200px;
+}
+
+.eyes section {
+	background-color: #575fcf;
+}
+
+.nose section {
+	background-color: #ef5777;
+	border-radius: 50%;
+}
+
+.mouth section {
+	background-color: #ffc048;
+}

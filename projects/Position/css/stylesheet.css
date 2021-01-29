@@ -1,0 +1,165 @@
+@charset "utf-8";
+
+body {
+	background-color: black;
+}
+
+#a {
+    width: 600px;
+    height: 400px;
+    display: inline-block;
+    
+    border: 2px solid yellow;
+    vertical-align: top;
+    
+    position: relative;
+    top: 10px;
+    left: 0px;
+}
+
+#b {
+    width: 400px;
+    height: 200px;
+    
+    border: 2px dashed red;
+    
+    position: absolute;
+    top: 40px;
+    left: 25px;
+}
+
+#c {
+    width: 200px;
+    height: 100px;
+    
+    border: 2px dotted white;
+    
+    position: absolute;
+    top: 10px;
+    left: 100px;
+}
+
+#d {
+    width: 100px;
+    height: 50px;
+    
+    border: 2px dotted lightblue;
+    
+    position: absolute;
+    z-index: 1;
+    
+    top: 25px;
+    left: 80px;
+}
+
+#d p {
+    margin-top: 14px;
+    margin-left: 40px;
+}
+
+#e {
+    width: 50px;
+    height: 25px;
+    
+    border: 2px solid yellow;
+    background-color: green;
+    
+    position: absolute;
+    top: 12px;
+    left: 5px;
+    z-index: -1;
+}
+
+#one {
+    width: 600px;
+    height: 400px;
+    
+    display: inline-block;
+    margin: 10px 10px;
+    background-color: cornflowerblue;
+    
+    border: 2px solid lightblue;
+    
+    position: relative;
+    z-index: -10;
+}
+
+#two {
+    width: 400px;
+    height: 200px;
+    
+    background-color: dimgray;
+    
+    position: absolute;
+    z-index: 3;
+    
+    top: 30px;
+    left: 50px;
+    
+    line-height: 200px;
+}
+
+#two h1 {
+    text-align: center;
+    text-shadow: 2px 2px 2px black;
+}
+
+#three {
+    width: 200px;
+    height: 100px;
+    
+    background-color: orange;
+    
+    position: absolute;
+    z-index: 3;
+    top: 50px;
+    left: 300px;
+}
+
+#four {
+    width: 300px;
+    height: 75px;
+    
+    background-color: green;
+    
+    position: absolute;
+    z-index: 1;
+}
+
+#five {
+    width: 400px;
+    height: 500px;
+    
+    background-color: darkmagenta;
+    
+    position: absolute;
+    top: 120px;
+    left: 450px;
+    z-index: 10;
+    
+    text-align: center;
+    font-weight: bold;
+    font-size: 60px;
+    text-shadow: 2px 2px 2px pink;
+}
+
+#six {
+    width: 1000px;
+    height: 50px;
+    
+    background-color: darkred;
+    
+    position: absolute;
+    top: 120px;
+    left: 0px;
+    z-index: 2;
+    
+    line-height: 50px;
+    text-align: right;
+    text-shadow: 2px 2px 2px blue;
+}
+
+p, h1 {
+    color: white;
+    margin: 0px 10px;
+}

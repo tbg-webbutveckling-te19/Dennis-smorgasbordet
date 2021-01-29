@@ -1,0 +1,66 @@
+@charset "utf-8";
+
+body {
+	font-family: 'Courier New', Courier, monospace;
+}
+
+.main-title {
+	font-size: 52px;
+	background: linear-gradient(to right, #c9f, #639);
+	background-clip: text;
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+	letter-spacing: 6px;
+	padding-left: 30px;
+	animation: slideIn 1.5s ease-in-out;
+}
+
+@keyframes slideIn {
+	from {
+		transform: translateX(-100%);
+	}
+	to {
+		transform: translateX(0%);
+	}
+}
+
+.web1-projects {
+	min-height: 80vh;
+	display: flex;
+	flex-direction: column;
+	flex-wrap: wrap;
+	/* justify-content: space-evenly; */
+	background-color: #9b59b6;
+}
+
+.project {
+	border-bottom: 1px solid white;
+}
+
+@keyframes dizzy {
+	0% {
+		transform: rotate(0deg);
+	}
+	100% {
+		transform: rotate(360deg);
+	}
+}
+
+.project a {
+	/* border-radius: 50%; */
+	background-color: #c387db;
+	height: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	color: #fff;
+	text-decoration: none;
+	font-size: 32px;
+	padding: 32px;
+	transition: all .4s;
+	/* animation: dizzy 30s infinite; */
+}
+
+.project a:hover {
+	background-color: #a165b9;
+}

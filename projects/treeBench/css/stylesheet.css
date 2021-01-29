@@ -1,0 +1,228 @@
+@charset 'utf-8';
+
+body {
+}
+
+div#wrapper {
+    width: calc(100% - 10px);
+    margin: auto;
+    height: 100%;
+}
+
+div#header {
+    width: 100%;
+    height: 500px;
+    background-image: url(../images/header.jpg);
+    background-size: cover;
+}
+
+div#header nav a {
+    color: rgba(255, 255 ,255, 0.7);
+    text-decoration: none;
+    font-size: 2em;
+    font-weight: 400;
+    float: right;
+    margin: 25px 25px 225px 0px;
+}
+
+div#header nav a:hover {
+    color: rgba(255, 255 ,255, 1);
+}
+
+div#header h1 {
+    color: white;
+    font-size: 5.5em;
+    letter-spacing: 0.1em;
+    text-shadow: 2px 2px 2px black;
+    text-transform: uppercase;
+    margin-bottom: 0px;
+    text-align: center;
+    clear: both;
+}
+
+div#header h1 span {
+    border: 10px solid white;
+    padding: 25px 25px 60px 25px;
+}
+
+div#header p {
+    color: white;
+    font-size: 3em;
+    letter-spacing: 0.1em;
+    text-shadow: 2px 2px 2px black;
+    text-transform: uppercase;
+    margin-top: 0px;
+    line-height: 1em;
+    text-align: center;
+}
+
+div#about {
+    width: 100%;
+    height: auto;
+    
+    margin-bottom: 25px;
+    background-color: white;
+        
+   /* box-shadow: 2px 2px 15px black, -2px -2px 15px black, -2px 2px 15px black, 2px -2px 15px black; */
+}
+
+div#about div#aboutMe {
+    width: 900px;
+    margin: auto;
+}
+
+div#aboutMe img {
+    width: 150px;
+    display: inline-block;
+    margin-top: 15px;
+}
+
+div#aboutMe img#mainImage {
+    width: 250px;
+    text-align: center;
+}
+
+div#aboutMe blockquote {
+    width: 50%;
+    margin: 15px auto 0px auto;
+}
+
+div#aboutMe blockquote::first-letter {
+    font-size: 40px;
+}
+
+div#aboutMe div#progressLeft {
+    float: left;   
+}
+
+div#aboutMe div#progressLeft {
+    float: right;
+}
+
+div#progressLeft p, div#progressRight p {
+    margin: 0px;
+}
+
+div#progressLeft progress, div#progressRight progress {
+    width: 300px;
+    margin-bottom: 25px;
+    
+}
+
+div#work {
+    width: 100%;
+    height: auto;
+    
+    margin-bottom: 215px;
+    background-color: firebrick;
+}
+
+div#slideshow {
+    width: 400px;
+    height: 400px;
+    
+    
+    border: 10px double white;
+    
+    animation: slide 10s infinite; 
+}
+
+@-webkit-keyframes slide {
+    0% {
+        background-image: url('../images/android.jpg');    
+    }
+    
+    20% {
+        background-image: url('../images/butterfly.jpg');
+        background-size: cover;
+        width: 450px;
+    }
+    
+    40% {
+        background-image: url('../images/devian.png');
+        background-size: cover;
+        width: 350px;
+    }
+    
+    60% {
+        background-image: url('../images/earth.jpg');
+        background-size: cover;
+        width: 500px;
+    }
+    
+    80% {
+        background-image: url('../images/wolf.jpg');
+        background-size: cover;
+        width: 300px;
+    }
+    
+    100% {
+        background-image: url('../images/android.jpg');
+    }
+}
+
+iframe {
+    width: 600px;
+    height: 450px;
+}
+
+form {
+    width: 50%;
+    height: auto;
+}
+
+form fieldset {
+    border: 5px groove white;
+}
+
+form fieldset legend {
+    color: white;
+    font-size: 26px;
+    font-weight: bold;
+    text-shadow: 2px 2px 2px black;
+    text-decoration: ;
+    font-family: sans-serif;
+    letter-spacing: 5px;
+    word-spacing: 5px;
+}
+
+form fieldset p label {
+    display: inline-block;
+    width: 85px;
+    color: white;
+    text-shadow: 1px 1px 1px black;
+}
+
+form fieldset p input {
+    width: 250px;
+    height: 30px;
+    border-radius: 9px;
+    padding: 5px;
+    outline: none;
+}
+
+form fieldset p textarea {
+    vertical-align: middle;
+    border-radius: 9px;
+    width: 258px;
+    height: 125px;
+    resize: none;
+}
+
+form fieldset p button {
+    width: 150px;
+    height: 40px;
+    border-radius: 9px;
+    margin-left: 89px;
+    font-weight: bold;
+    font-size: 18px;
+    font-family: serif;
+    box-shadow: 1px 1px 2px black;
+    background-color: white;
+    outline: none;
+    position: relative;
+}
+
+form fieldset p button:active {
+    top: 1px;
+}
