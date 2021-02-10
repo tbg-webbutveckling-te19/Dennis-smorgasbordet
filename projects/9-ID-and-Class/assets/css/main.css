@@ -16,6 +16,9 @@ body {
     height: 100px;
 
     background-color: cadetblue;
+
+    margin: 10px;
+    padding: 10px;
 }
 
 /* Utility classes */
@@ -46,6 +49,11 @@ body {
 
 .rounded-5 {
     border-radius: 5px;
+    transition: all .4s;
+}
+
+.rounded-5:hover {
+    border-radius: 150px;
 }
 
 .rounded-10 {
