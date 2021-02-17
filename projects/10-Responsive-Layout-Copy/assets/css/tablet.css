@@ -1,0 +1,33 @@
+header {
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+header h1 {
+    order: 2;
+    margin-bottom: 100px;
+}
+
+nav {
+    align-self: flex-start;
+    order: 1;
+    width: 100%; /* 100vw works better */
+    margin-top: 50px;
+}
+
+main {
+    flex-direction: column;
+}
+
+.main-left {
+    order: 2;
+    border-bottom: 1px solid grey;
+}
+
+.main-center {
+    order: 1;
+}
+
+.main-right {
+    order: 3;
+}
