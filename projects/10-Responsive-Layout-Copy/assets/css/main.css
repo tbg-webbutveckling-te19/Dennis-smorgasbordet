@@ -49,11 +49,23 @@ nav {
     width: 40%;
 }
 
+.nav-mobile {
+    display: none;
+}
+
 nav ul {
     list-style: none;
     font-size: 20px;
     justify-content: space-evenly;
     text-transform: uppercase;
+}
+
+#hack-mobile-menu {
+    display: none;
+}
+
+.mobile-menu-icon {
+    display: none;
 }
 
 main {
