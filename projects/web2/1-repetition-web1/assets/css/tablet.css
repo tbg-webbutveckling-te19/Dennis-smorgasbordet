@@ -1,0 +1,11 @@
+body {
+    background-color: #9c40a7;
+}
+
+.main-nav {
+    flex-direction: column;
+}
+
+.main-nav a {
+    color: white;
+}
