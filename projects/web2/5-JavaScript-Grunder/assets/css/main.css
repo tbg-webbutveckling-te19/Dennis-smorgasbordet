@@ -1,0 +1,36 @@
+@charset "UTF-8";
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    padding: 20px;
+}
+
+#userInput {
+    width: 200px;
+    height: 50px;
+    border-radius: 4px;
+    outline: none;
+    border: none;
+    border-bottom: 2px solid #ddd;
+    margin: auto;
+    display: block;
+}
+
+#showSubject {
+    text-align: center;
+    padding: 10px;
+}
+
+#currentDay {
+    text-align: center;
+    font-size: 60px;
+}
+
+#currentDay::first-letter {
+    color: red;
+}

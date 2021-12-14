@@ -12,9 +12,9 @@ body {
     
     display: grid;
     grid-template-areas: 
-        "a b c"
-        "d e f"
-        "g h i";
+        ". b ."
+        "d . f"
+        ". h .";
 }
 
 .grid-item:nth-child(even) {
@@ -26,5 +26,22 @@ body {
 
 .grid-item:nth-child(odd) {
     background-color: cornflowerblue;
+}
+
+.grid-item:nth-child(1) {
+    background-color: rgb(125, 197, 176);
+    grid-area: b;
+}
+.grid-item:nth-child(2) {
+    background-color: rgb(216, 100, 237);
+    grid-area: d;
+}
+.grid-item:nth-child(3) {
+    background-color: rgb(216, 237, 100);
+    grid-area: f;
+}
+.grid-item:nth-child(4) {
+    background-color: rgb(237, 100, 146);
+    grid-area: h;
 }
 
