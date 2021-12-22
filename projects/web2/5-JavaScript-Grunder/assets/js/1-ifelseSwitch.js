@@ -122,6 +122,8 @@ switch(grade) {
 
 // }
 
+
+// dag.nu
 var weekday = document.getElementById("currentDay");
 var currentDay = d.getDay();
 
@@ -145,6 +147,7 @@ switch(currentDay) {
 	case 4:
 		weekday.innerHTML = "Thursday";
 		break;
+
 	case 5:
 		weekday.innerHTML = "Friday";
 		break;
@@ -155,4 +158,83 @@ switch(currentDay) {
 
 	default:
 		console.log('What day?');
+}
+
+// Control the square
+var square = document.getElementById("square");
+
+square.setAttribute("style", 
+    "position: absolute; bottom: 440px; left: 960px;");
+
+var innerWidth = window.innerWidth - 50;
+var innerHeight = window.innerHeight - 50;
+
+console.log(innerWidth)
+console.log(innerHeight)
+
+
+document.addEventListener("keydown", function(e) {
+    switch(e.key) {
+        case "ArrowLeft":
+            keyLeft();
+            break;
+
+        case "ArrowRight":
+            keyRight();
+            break;
+
+        case "ArrowUp":
+            keyUp();
+            break;
+
+        case "ArrowDown":
+            keyDown();
+            break;
+    }
+})
+
+// FUNCTIONS
+function keyLeft() {
+    var leftNumbers = square.style.left.replace("px", "");
+    var left = Number(leftNumbers);
+    var speed = 10;
+    
+    if(left > 0) {
+        square.style.left = `${left - speed}px`
+        console.log(left)
+
+    }
+}
+
+function keyRight() {
+    var leftNumbers = square.style.left.replace("px", "");
+    var left = Number(leftNumbers);
+    var speed = 10;
+    
+    if(left < innerWidth) {
+        square.style.left = `${left + speed}px`;
+    }
+    console.log(left)
+}
+
+function keyUp() {
+    var bottomNumbers = square.style.bottom.replace("px", "");
+    var bottom = Number(bottomNumbers);
+    var speed = 10;
+    
+    if(bottom < innerHeight) {
+        square.style.bottom = `${bottom + speed}px`;
+    }
+    console.log(bottom)
+}
+
+function keyDown() {
+    var bottomNumbers = square.style.bottom.replace("px", "");
+    var bottom = Number(bottomNumbers);
+    var speed = 10;
+    
+    if(bottom > 0) {
+        square.style.bottom = `${bottom - speed}px`;
+    }
+    console.log(bottom)
 }
